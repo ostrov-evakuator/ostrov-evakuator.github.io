@@ -522,54 +522,6 @@
             transform: translateY(-2px);
         }
         
-        /* ========== ФОРМА ЗАКАЗА ========== */
-        .order {
-            background: linear-gradient(135deg, #1e2b3a 0%, #0f1a24 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .order h2 {
-            color: white;
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-        
-        .order p {
-            color: #ddd;
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-        
-        .order-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.1);
-            padding: 40px;
-            border-radius: 10px;
-        }
-        
-        .order-form input,
-        .order-form textarea {
-            width: 100%;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        
-        .order-form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-        
-        .form-note {
-            margin-top: 20px;
-            font-size: 13px;
-            opacity: 0.7;
-        }
         
         /* ========== КОНТАКТЫ ========== */
         .contacts {
@@ -864,7 +816,6 @@
             </div>
             <div class="hero-actions">
                 <a href="tel:+79118880404" class="btn btn-large">Позвонить</a>
-                <a href="#order" class="btn btn-large btn-whatsapp">📱 Заказать</a>
             </div>
             <p style="margin-top: 40px; color: #ddd; font-size: 18px;">Спецтехника любого типа • Опыт более 5 лет • Работаем круглосуточно</p>
         </div>
@@ -1131,24 +1082,6 @@
             <p style="text-align: center; margin-top: 30px; font-size: 18px;">
                 <strong>Нет вашего города? Звоните — договоримся!</strong>
             </p>
-        </div>
-    </section>
-    
-    <!-- ФОРМА ЗАКАЗА -->
-    <section id="order" class="order">
-        <div class="container">
-            <h2>Заказать эвакуацию спецтехники</h2>
-            <p>Оставьте заявку — мы перезвоним через 5 минут</p>
-            
-            <form action="https://formspree.io/f/ваш_код" method="POST" class="order-form">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="tel" name="phone" placeholder="Телефон" required>
-                <input type="text" name="tech_type" placeholder="Тип техники (трактор, погрузчик, экскаватор...)" required>
-                <input type="hidden" name="city" value="Псковская область">
-                <textarea name="address" placeholder="Адрес погрузки и куда везти" rows="2"></textarea>
-                <button type="submit" class="btn btn-large" style="width: 100%;">Заказать эвакуатор</button>
-            </form>
-            <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
         </div>
     </section>
     
