@@ -1,0 +1,92 @@
+# robots.txt для сайта ostrov-evakuator.ru
+# GitHub Pages - статический хостинг
+
+# Основные настройки
+User-agent: *
+Disallow: 
+
+# Указываем главное зеркало
+Host: https://ostrov-evakuator.ru
+
+# Карта сайта
+Sitemap: https://ostrov-evakuator.ru/sitemap.xml
+
+# Приоритетные страницы для ускоренной индексации
+# (комментарий для поисковиков, что это главные страницы)
+
+# Запрещаем индексацию служебных страниц GitHub Pages
+User-agent: *
+Disallow: /404.html
+Disallow: /404/
+Disallow: /500.html
+Disallow: /500/
+
+# Запрещаем дубли страниц с index.html
+User-agent: *
+Disallow: /*/index.html$
+Disallow: /*/index.htm$
+Disallow: /*/default.html$
+Disallow: /*/default.htm$
+
+# Запрещаем служебные файлы
+User-agent: *
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /.vscode/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.gitignore
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /composer.json
+Disallow: /composer.lock
+
+# Запрещаем временные файлы
+User-agent: *
+Disallow: /*.tmp$
+Disallow: /*.temp$
+Disallow: /*.bak$
+Disallow: /*.backup$
+Disallow: /*.swp$
+Disallow: /*.swo$
+Disallow: /*.old$
+Disallow: /*.new$
+
+# Запрещаем системные файлы Windows/Mac
+User-agent: *
+Disallow: /Thumbs.db
+Disallow: /.DS_Store
+Disallow: /desktop.ini
+
+# Специальные правила для Яндекса
+User-agent: Yandex
+Disallow: 
+Host: https://ostrov-evakuator.ru
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+# Специальные правила для Google
+User-agent: Googlebot
+Disallow: 
+Host: https://ostrov-evakuator.ru
+
+# Специальные правила для Mail.ru
+User-agent: Mail.Ru
+Disallow: 
+
+# Специальные правила для Bing
+User-agent: Bingbot
+Disallow: 
+
+# Специальные правила для Yahoo
+User-agent: Yahoo! Slurp
+Disallow: 
+
+# Специальные правила для Rambler
+User-agent: Rambler
+Disallow: 
+
+# Специальные правила для остальных поисковиков
+User-agent: *
+Disallow: 
