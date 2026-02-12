@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Главное -->
+    <title>Эвакуатор в Пскове | Круглосуточная эвакуация авто и спецтехники до 5т</title>
+    <meta name="description" content="Эвакуатор в Пскове. Быстрая подача 15-30 минут по городу и области. Эвакуация авто и спецтехники до 5т. Выкуп авто после ДТП. Работаем 24/7. Звоните!">
+    <meta name="keywords" content="эвакуатор псков, эвакуация авто псков, выкуп авто после дтп псков, эвакуатор псковская область">
+    
+    <!-- Яндекс Вебмастер (вставьте ваш код) -->
+    <meta name="yandex-verification" content="ВАШ_КОД_ЗДЕСЬ">
+    
+    <!-- Гео-метки для Пскова -->
+    <meta name="geo.region" content="RU-PSK">
+    <meta name="geo.placename" content="Псков, Псковская область">
+    <meta name="geo.position" content="57.817, 28.334">
+    <meta name="ICBM" content="57.817, 28.334">
+    
+    <!-- Микроразметка LocalBusiness для Пскова -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "name": "Эвакуатор в Пскове",
+        "description": "Круглосуточная эвакуация автомобилей и спецтехники в Пскове и Псковской области. Более 5 лет опыта.",
+        "url": "https://ostrov-evakuator.ru/pskov",
+        "telephone": ["+7-911-888-04-04", "+7-911-391-77-93"],
+        "priceRange": "от 1000₽",
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        }],
+        "areaServed": {
+            "@type": "City",
+            "name": ["Псков", "Остров", "Печоры", "Палкино", "Пыталово", "Гдов", "Порхов"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Псков",
+            "addressRegion": "Псковская область",
+            "addressCountry": "RU"
+        }
+    }
+    </script>
+    
+    <style>
+        /* ========== ОСНОВНЫЕ СТИЛИ ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ========== ШАПКА ========== */
+        header {
+            background: #1e2b3a;
+            color: white;
+            padding: 20px 0;
+            border-bottom: 4px solid #ffaa00;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .logo p {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+        
+        .header-contacts {
+            text-align: right;
+        }
+        
+        .phone {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffaa00;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        
+        .phone:hover {
+            color: #ffc34d;
+        }
+        
+        .work-time {
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+        /* ========== НАВИГАЦИЯ ПО ГОРОДАМ ========== */
+        .city-nav {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .city-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .city-links span {
+            font-weight: 600;
+            color: #666;
+        }
+        
+        .city-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        
+        .city-links a:hover,
+        .city-links a.active {
+            background: #ffaa00;
+            color: #1e2b3a;
+        }
+        
+        /* ========== ГЛАВНЫЙ ЭКРАН ========== */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #1e2b3a 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: "🚛";
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 150px;
+            opacity: 0.1;
+        }
+        
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: #ddd;
+            position: relative;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .feature {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ffaa00;
+            color: #1e2b3a;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .btn:hover {
+            background: #ffc34d;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,170,0,0.3);
+        }
+        
+        .btn-large {
+            padding: 18px 50px;
+            font-size: 22px;
+        }
+        
+        /* ========== ОСОБЕННОСТИ ГОРОДА ========== */
+        .city-features {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            transition: 0.3s;
+            border-bottom: 3px solid #ffaa00;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #1e2b3a;
+        }
+        
+        .feature-card p {
+            color: #666;
+        }
+        
+        /* ========== УСЛУГИ ========== */
+        .services {
+            padding: 80px 0;
+            background: #f9f9f9;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #1e2b3a;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #ffaa00;
+            margin: 20px auto 0;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 54px;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1e2b3a;
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .service-price {
+            font-size: 26px;
+            font-weight: 700;
+            color: #ffaa00;
+        }
+        
+        /* ========== ТАБЛИЦА ЦЕН ========== */
+        .prices {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .price-table th {
+            background: #1e2b3a;
+            color: white;
+            padding: 18px 15px;
+            text-align: left;
+            font-size: 18px;
+        }
+        
+        .price-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 17px;
+        }
+        
+        .price-table tr:hover {
+            background: #fff9e6;
+        }
+        
+        .price-table td:last-child {
+            font-weight: 700;
+            color: #ffaa00;
+        }
+        
+        .price-note {
+            margin-top: 25px;
+            color: #666;
+            font-style: italic;
+            text-align: right;
+        }
+        
+        /* ========== О КОМПАНИИ ========== */
+        .about {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1e2b3a;
+        }
+        
+        .about-text ul {
+            margin: 25px 0;
+            padding-left: 0;
+        }
+        
+        .about-text li {
+            margin-bottom: 12px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 30px;
+            font-size: 17px;
+        }
+        
+        .about-text li:before {
+            content: "✓";
+            color: #ffaa00;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .about-stat {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffaa00;
+        }
+        
+        .stat-label {
+            color: #666;
+        }
+        
+        /* ========== ФОРМА ЗАКАЗА ========== */
+        .order {
+            background: linear-gradient(135deg, #1e2b3a 0%, #0f1a24 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .order h2 {
+            color: white;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        
+        .order p {
+            color: #ddd;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .order-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        
+        .order-form input,
+        .order-form textarea {
+            width: 100%;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background: white;
+        }
+        
+        .order-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-note {
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+        
+        /* ========== КОНТАКТЫ ========== */
+        .contacts {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item h4 {
+            font-size: 20px;
+            color: #1e2b3a;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item a {
+            color: #ffaa00;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .contact-item a:hover {
+            color: #1e2b3a;
+        }
+        
+        /* ========== ФУТЕР ========== */
+        footer {
+            background: #0f1a24;
+            color: #ccc;
+            padding: 50px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo p {
+            color: #999;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #ffaa00;
+            padding-left: 5px;
+        }
+        
+        .footer-contacts a {
+            color: #ffaa00;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #2c3e50;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        /* ========== АДАПТИВНОСТЬ ========== */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contacts {
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            .hero h2 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+            
+            .city-links {
+                justify-content: center;
+            }
+            
+            .city-links span {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .order-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Эвакуатор в Пскове</h1>
+                    <p>эвакуация автомобилей и спецтехники весом до 5т</p>
+                </div>
+                <div class="header-contacts">
+                    <a href="tel:+79118880404" class="phone">+7-911-888-04-04</a>
+                    <a href="tel:+79113917793" class="phone">+7-911-391-77-93</a>
+                    <div class="work-time">Круглосуточно • Без выходных</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- НАВИГАЦИЯ ПО ГОРОДАМ -->
+    <div class="city-nav">
+        <div class="container">
+            <div class="city-links">
+                <span>Работаем в городах:</span>
+                <a href="index.html">Остров</a>
+                <a href="pskov.html" class="active">Псков</a>
+                <a href="velikie-luki.html">Великие Луки</a>
+                <a href="opochka.html">Опочка</a>
+                <a href="pechory.html">Печоры</a>
+                <a href="pustoshka.html">Пустошка</a>
+                <a href="sebey.html">Себеж</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+        <div class="container">
+            <h2>Эвакуатор в Пскове</h2>
+            <p>Круглосуточно • Быстрая подача 15-30 минут</p>
+            <div class="hero-features">
+                <div class="feature">🚛 Легковые авто</div>
+                <div class="feature">🚜 Спецтехника до 5т</div>
+                <div class="feature">💰 Выкуп авто после ДТП</div>
+            </div>
+            <div class="hero-actions">
+                <a href="tel:+79118880404" class="btn btn-large">Позвонить сейчас</a>
+                <a href="#order" class="btn" style="background: transparent; border: 2px solid #ffaa00; color: #ffaa00; margin-left: 20px;">Заказать</a>
+            </div>
+            <p style="margin-top: 30px; color: #ddd; font-size: 18px;">Также осуществляем услуги эвакуатора по всей Псковской области</p>
+        </div>
+    </section>
+    
+    <!-- ОСОБЕННОСТИ ГОРОДА -->
+    <section class="city-features">
+        <div class="container">
+            <h2 class="section-title">Эвакуатор в Пскове</h2>
+            <p class="section-subtitle">Работаем по всему городу и области. Своя стоянка в Завеличье.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏙️</div>
+                    <h3>Все районы Пскова</h3>
+                    <p>Завеличье, Запсковье, Центр, Кресты, Любятово, Овсище — выезжаем в любой район</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛣️</div>
+                    <h3>Трассы и область</h3>
+                    <p>Эвакуация с трасс М20, А212, выезды в Остров, Печоры, Порхов, Гдов, Пыталово</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <h3>Спецтехника</h3>
+                    <p>Эвакуируем тракторы, погрузчики, экскаваторы с предприятий и строек города</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- УСЛУГИ -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Услуги эвакуатора в Пскове</h2>
+            <p class="section-subtitle">Работаем 24/7 • Более 5 лет опыта • Собственный автопарк</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Эвакуация легковых авто</h3>
+                    <p>Эвакуируем легковые автомобили, кроссоверы, микроавтобусы. Любые неисправности и ДТП.</p>
+                    <span class="service-price">от 1000 ₽</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚜</div>
+                    <h3>Эвакуация спецтехники</h3>
+                    <p>Погрузчики, тракторы, экскаваторы, мини-техника. Вес до 5 тонн.</p>
+                    <span class="service-price">от 2000 ₽</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Выкуп авто после ДТП</h3>
+                    <p>Срочный выкуп поврежденных автомобилей в Пскове. Оценка бесплатно, деньги сразу.</p>
+                    <span class="service-price">До 500 000 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ТАБЛИЦА ЦЕН -->
+    <section class="prices">
+        <div class="container">
+            <h2 class="section-title">Стоимость эвакуатора в Пскове</h2>
+            <p class="section-subtitle">Цены фиксированные, без доплат и скрытых комиссий</p>
+            
+            <table class="price-table">
+                <tr>
+                    <th>Маршрут / Услуга</th>
+                    <th>Стоимость</th>
+                </tr>
+                <tr>
+                    <td>Эвакуация по Пскову (в пределах города)</td>
+                    <td>от 1000 ₽</td>
+                </tr>
+                <tr>
+                    <td>Эвакуация Псков → Остров</td>
+                    <td>от 2500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Эвакуация Псков → Печоры</td>
+                    <td>от 2500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Эвакуация Псков → Порхов</td>
+                    <td>от 2800 ₽</td>
+                </tr>
+                <tr>
+                    <td>Эвакуация Псков → Гдов</td>
+                    <td>от 3500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Эвакуация Псков → Великие Луки</td>
+                    <td>от 4500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Эвакуация спецтехники (по Пскову)</td>
+                    <td>от 2500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Выкуп авто после ДТП</td>
+                    <td>Оценка бесплатно</td>
+                </tr>
+            </table>
+            <p class="price-note">* Точная цена зависит от расстояния, веса автомобиля и времени суток. Уточняйте по телефону.</p>
+        </div>
+    </section>
+    
+    <!-- О КОМПАНИИ -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Эвакуатор в Пскове — более 5 лет работы</h3>
+                    <p style="margin-bottom: 20px; font-size: 18px;">Мы специализируемся на эвакуации автомобилей и спецтехники в <strong>Пскове и Псковской области</strong> с 2019 года.</p>
+                    <p style="margin-bottom: 20px;">Наша техника базируется в Завеличье, поэтому подача по Пскову занимает 15-20 минут. Знаем все проблемные участки дорог и быстрее других приезжаем на вызов.</p>
+                    
+                    <h4 style="margin: 30px 0 15px; color: #1e2b3a;">Почему выбирают нас в Пскове:</h4>
+                    <ul>
+                        <li>Своя стоянка в Завеличье — не привлекаем посредников</li>
+                        <li>Фиксированные цены без доплат "за расстояние"</li>
+                        <li>Работаем круглосуточно, включая праздники</li>
+                        <li>Опыт эвакуации с трасс М20 и А212</li>
+                        <li>Спецтехника до 5 тонн — тракторы, погрузчики</li>
+                    </ul>
+                    
+                    <div class="about-stat">
+                        <div class="stat-item">
+                            <div class="stat-number">5+ лет</div>
+                            <div class="stat-label">опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1500+</div>
+                            <div class="stat-label">клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">работаем</div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <span style="background: #ffaa00; color: #1e2b3a; padding: 10px 25px; border-radius: 5px; font-weight: 700; font-size: 18px;">АКЦИЯ! Скидка 10% при первом обращении в Пскове</span>
+                    </div>
+                    <p style="margin-top: 20px;">Подробности в наших социальных сетях:</p>
+                    <p style="margin-top: 10px;">
+                        <a href="#" style="color: #1e2b3a; text-decoration: none; margin-right: 20px; font-weight: 600;">ВКонтакте</a>
+                        <a href="#" style="color: #1e2b3a; text-decoration: none; margin-right: 20px; font-weight: 600;">Telegram</a>
+                        <a href="#" style="color: #1e2b3a; text-decoration: none; font-weight: 600;">WhatsApp</a>
+                    </p>
+                </div>
+                
+                <div class="about-image">
+                    <div style="background: #ffaa00; color: #1e2b3a; padding: 60px 30px; border-radius: 10px; text-align: center;">
+                        <span style="font-size: 100px;">🚛</span>
+                        <h3 style="margin-top: 20px; color: #1e2b3a; font-size: 28px;">Эвакуатор в Пскове</h3>
+                        <p style="margin-top: 15px; font-size: 18px; color: #1e2b3a;">Подача 15-30 минут</p>
+                        <a href="tel:+79118880404" style="display: inline-block; margin-top: 20px; background: #1e2b3a; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 700;">+7-911-888-04-04</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ФОРМА ЗАКАЗА -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Заказать эвакуатор в Пскове</h2>
+            <p>Оставьте номер телефона — мы перезвоним через 2 минуты</p>
+            
+            <form action="https://formspree.io/f/ваш_код" method="POST" class="order-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="hidden" name="city" value="Псков">
+                <textarea name="address" placeholder="Откуда эвакуировать? (адрес, ориентир)" rows="2"></textarea>
+                <button type="submit" class="btn btn-large" style="width: 100%;">Заказать эвакуатор</button>
+            </form>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </div>
+    </section>
+    
+    <!-- КОНТАКТЫ -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты в Пскове</h2>
+            <p class="section-subtitle">Свяжитесь с нами любым удобным способом</p>
+            
+            <div class="contacts-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>Телефон</h4>
+                    <a href="tel:+79118880404">+7-911-888-04-04</a><br>
+                    <a href="tel:+79113917793" style="font-size: 20px; margin-top: 5px;">+7-911-391-77-93</a>
+                    <p style="margin-top: 10px; color: #666;">Круглосуточно</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <h4>Режим работы</h4>
+                    <p style="font-size: 22px; font-weight: 700; color: #ffaa00;">24/7</p>
+                    <p style="color: #666;">Без выходных и праздников</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h4>Зона обслуживания</h4>
+                    <p style="font-size: 18px; font-weight: 600; color: #1e2b3a;">Псков</p>
+                    <p style="color: #666;">и вся Псковская область</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <a href="mailto:info@ostrov-evakuator.ru" style="font-size: 18px;">info@ostrov-evakuator.ru</a>
+                    <p style="margin-top: 10px; color: #666;">Напишите нам</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ФУТЕР -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Эвакуатор в Пскове</h3>
+                    <p>Работаем по Пскову и области с 2019 года</p>
+                    <p style="margin-top: 15px;">🚛 Круглосуточно • Без выходных</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 style="color: white; margin-bottom: 15px;">Города</h4>
+                    <a href="index.html">Остров</a>
+                    <a href="pskov.html">Псков</a>
+                    <a href="velikie-luki.html">Великие Луки</a>
+                    <a href="opochka.html">Опочка</a>
+                    <a href="pechory.html">Печоры</a>
+                    <a href="pustoshka.html">Пустошка</a>
+                    <a href="sebey.html">Себеж</a>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4 style="color: white; margin-bottom: 15px;">Контакты</h4>
+                    <a href="tel:+79118880404">+7-911-888-04-04</a>
+                    <a href="tel:+79113917793">+7-911-391-77-93</a>
+                    <p style="color: #ccc; margin-top: 15px;">Эвакуатор Псков</p>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>© 2019-2024 Эвакуатор в Пскове — эвакуация автомобилей и спецтехники</p>
+                <p style="margin-top: 10px;">Все права защищены. Работаем по Псковской области круглосуточно.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
