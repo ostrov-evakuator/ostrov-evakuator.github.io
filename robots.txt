@@ -58,13 +58,11 @@ Disallow: /desktop.ini
 # Специальные правила для Яндекса
 User-agent: Yandex
 Disallow: 
-Host: https://ostrov-evakuator.ru
 Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
 
 # Специальные правила для Google
 User-agent: Googlebot
 Disallow: 
-Host: https://ostrov-evakuator.ru
 
 # Специальные правила для Mail.ru
 User-agent: Mail.Ru
