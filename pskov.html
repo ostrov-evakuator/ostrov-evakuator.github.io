@@ -9,9 +9,14 @@
     <meta name="description" content="Эвакуатор в Пскове. Быстрая подача 15-30 минут по городу и области. Эвакуация авто и спецтехники до 5т. Выкуп авто после ДТП. Работаем 24/7. Звоните!">
     <meta name="keywords" content="эвакуатор псков, эвакуация авто псков, выкуп авто после дтп псков, эвакуатор псковская область">
     
-    <!-- Яндекс Вебмастер (вставьте ваш код) -->
-    <meta name="yandex-verification" content="ВАШ_КОД_ЗДЕСЬ">
-    
+    <!-- Яндекс Вебмастер: после подтверждения сайта в вебмастере вставьте сюда meta-код подтверждения -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://ostrov-evakuator.ru/pskov.html">
+    <meta property="og:title" content="Эвакуатор в Пскове | Круглосуточная эвакуация авто и спецтехники до 5т">
+    <meta property="og:description" content="Эвакуатор в Пскове. Подача 15-30 минут. Эвакуация авто и спецтехники до 5т, выкуп авто после ДТП. Работаем 24/7. Тел: +7-911-888-04-04">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ostrov-evakuator.ru/pskov.html">
+
     <!-- Гео-метки для Пскова -->
     <meta name="geo.region" content="RU-PSK">
     <meta name="geo.placename" content="Псков, Псковская область">
@@ -561,7 +566,34 @@
         }
         
         /* ========== АДАПТИВНОСТЬ ========== */
+        /* Мобильная кнопка «Позвонить» */
+        .mobile-call-btn {
+            display: none;
+        }
+
         @media (max-width: 768px) {
+            .mobile-call-btn {
+                display: block;
+                position: fixed;
+                left: 12px;
+                right: 12px;
+                bottom: 12px;
+                z-index: 9999;
+                background: #ffaa00;
+                color: #1a2b3c;
+                text-align: center;
+                padding: 16px 20px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 700;
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+            }
+
+            body {
+                padding-bottom: 76px;
+            }
+
             .header-content {
                 flex-direction: column;
                 text-align: center;
@@ -890,10 +922,15 @@
             </div>
             
             <div class="footer-copyright">
-                <p>© 2019-2024 Эвакуатор в Пскове — эвакуация автомобилей и спецтехники</p>
+                <p>© 2019-2026 Эвакуатор в Пскове — эвакуация автомобилей и спецтехники</p>
                 <p style="margin-top: 10px;">Все права защищены. Работаем по Псковской области круглосуточно.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Яндекс.Метрика: зарегистрируйте счётчик на metrika.yandex.ru и вставьте код сюда -->
+
+    <!-- Мобильная кнопка звонка -->
+    <a href="tel:+79118880404" class="mobile-call-btn">📞 Позвонить: +7-911-888-04-04</a>
 </body>
 </html>
