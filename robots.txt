@@ -5,9 +5,6 @@
 User-agent: *
 Disallow: 
 
-# Указываем главное зеркало
-Host: https://ostrov-evakuator.ru
-
 # Карта сайта
 Sitemap: https://ostrov-evakuator.ru/sitemap.xml
 
