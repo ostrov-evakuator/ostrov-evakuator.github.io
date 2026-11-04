@@ -1,0 +1,57 @@
+/* Мобильные правки для главной страницы (Tilda-экспорт) */
+
+/* Плавающая кнопка звонка (только мобильные) */
+.mobile-call {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 99999;
+        background: #ff6b00;
+        color: #ffffff;
+        font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+    }
+
+    body {
+        padding-bottom: 76px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Заголовок главного экрана */
+    #rec1899074043 .t050__title div {
+        font-size: 18px !important;
+        line-height: 26px !important;
+    }
+
+    /* Центрирование блока контактов */
+    #rec1899066743 .t1055__col-wrapper,
+    #rec1899066743 .t1055__col-wrapper_first {
+        text-align: center;
+    }
+
+    #rec1899066743 .t1055__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Меньше скругление у карточек */
+    #rec1899200763 .t692__blockimg,
+    #rec1899066753 .t692__blockimg {
+        border-radius: 16px;
+    }
+}

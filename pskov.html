@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e2b3a">
     
     <!-- SEO: Главное -->
     <title>Эвакуатор в Пскове | Круглосуточная эвакуация авто и спецтехники до 5т</title>
     <meta name="description" content="Эвакуатор в Пскове. Быстрая подача 15-30 минут по городу и области. Эвакуация авто и спецтехники до 5т. Выкуп авто после ДТП. Работаем 24/7. Звоните!">
     <meta name="keywords" content="эвакуатор псков, эвакуация авто псков, выкуп авто после дтп псков, эвакуатор псковская область">
     
-    <!-- Яндекс Вебмастер (вставьте ваш код) -->
-    <meta name="yandex-verification" content="ВАШ_КОД_ЗДЕСЬ">
+    <!-- Яндекс Вебмастер -->
+    <meta name="yandex-verification" content="1f3d4d24a81c8eee">
     
     <!-- Гео-метки для Пскова -->
     <meta name="geo.region" content="RU-PSK">
@@ -607,6 +608,72 @@
             }
             
         }
+
+        /* ========== МОБИЛЬНАЯ КНОПКА ЗВОНКА ========== */
+        .mobile-call {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-call {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                left: 12px;
+                right: 12px;
+                bottom: 12px;
+                z-index: 9999;
+                background: #ffaa00;
+                color: #1e2b3a;
+                font-size: 18px;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 15px 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            }
+
+            body {
+                padding-bottom: 76px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 0;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .services,
+            .prices,
+            .about,
+            .contacts,
+            .city-features {
+                padding: 50px 0;
+            }
+
+            .price-table th,
+            .price-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -801,11 +868,9 @@
                     <div style="margin-top: 30px;">
                         <span style="background: #ffaa00; color: #1e2b3a; padding: 10px 25px; border-radius: 5px; font-weight: 700; font-size: 18px;">АКЦИЯ! Скидка 10% при первом обращении в Пскове</span>
                     </div>
-                    <p style="margin-top: 20px;">Подробности в наших социальных сетях:</p>
+                    <p style="margin-top: 20px;">Подробности и связь — в WhatsApp:</p>
                     <p style="margin-top: 10px;">
-                        <a href="#" style="color: #1e2b3a; text-decoration: none; margin-right: 20px; font-weight: 600;">ВКонтакте</a>
-                        <a href="#" style="color: #1e2b3a; text-decoration: none; margin-right: 20px; font-weight: 600;">Telegram</a>
-                        <a href="#" style="color: #1e2b3a; text-decoration: none; font-weight: 600;">WhatsApp</a>
+                        <a href="https://wa.me/79118880404" style="color: #1e2b3a; text-decoration: none; font-weight: 600;">💬 Написать в WhatsApp</a>
                     </p>
                 </div>
                 
@@ -895,5 +960,7 @@
             </div>
         </div>
     </footer>
+
+    <a href="tel:+79118880404" class="mobile-call">📞 Позвонить: +7-911-888-04-04</a>
 </body>
 </html>
