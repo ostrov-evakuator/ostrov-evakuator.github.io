@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e2b3a">
     
     <!-- SEO: Главное -->
     <title>Эвакуатор в Пскове | Круглосуточная эвакуация авто и спецтехники до 5т</title>
@@ -607,6 +608,72 @@
             }
             
         }
+
+        /* ========== МОБИЛЬНАЯ КНОПКА ЗВОНКА ========== */
+        .mobile-call {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-call {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                left: 12px;
+                right: 12px;
+                bottom: 12px;
+                z-index: 9999;
+                background: #ffaa00;
+                color: #1e2b3a;
+                font-size: 18px;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 15px 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            }
+
+            body {
+                padding-bottom: 76px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 0;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .services,
+            .prices,
+            .about,
+            .contacts,
+            .city-features {
+                padding: 50px 0;
+            }
+
+            .price-table th,
+            .price-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -895,5 +962,7 @@
             </div>
         </div>
     </footer>
+
+    <a href="tel:+79118880404" class="mobile-call">📞 Позвонить: +7-911-888-04-04</a>
 </body>
 </html>
