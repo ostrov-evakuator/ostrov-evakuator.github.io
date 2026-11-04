@@ -436,3 +436,80 @@ footer {
         margin-bottom: 5px;
     }
 }
+
+/* ===== Мобильная кнопка звонка ===== */
+.mobile-call {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 9999;
+        background: #ffaa00;
+        color: #1a2b3c;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    body {
+        padding-bottom: 76px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .services,
+    .prices,
+    .about,
+    .blog-teaser,
+    .contacts-preview,
+    .order {
+        padding: 40px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Жёсткие трёхколоночные сетки, заданные инлайн-стилями */
+    [style*="repeat(3"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
