@@ -5,8 +5,8 @@
 User-agent: *
 Disallow: 
 
-# Указываем главное зеркало
-Host: https://ostrov-evakuator.ru
+# Главное зеркало теперь задается через rel="canonical" на страницах сайта
+# (директива Host больше не поддерживается Яндексом)
 
 # Карта сайта
 Sitemap: https://ostrov-evakuator.ru/sitemap.xml
